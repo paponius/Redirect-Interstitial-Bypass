@@ -37,19 +37,19 @@
 
 //// REQUIRE directives. Make it identical to production version of the US. Replace with file:// those which will be edited in IDE.
 
-// @require        file://H:\Projects\JS\Redirect & Interstitial Bypass\GM\GM_common.js
+// @require        file://H:\Projects\JS\Redirect-Interstitial-Bypass\GM\GM_common.js
 
 //// FRAMEWORKS
 // ###require        https://code.jquery.com/jquery-2.2.0.min.js
 // ###require        http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // ###require        https://greasemonkey.github.io/gm4-polyfill/gm4-polyfill.js
 
-// @require        file://H:\Projects\JS\Redirect & Interstitial Bypass\src\Redirect & Interstitial Bypass.js
+// @require        file://H:\Projects\JS\Redirect-Interstitial-Bypass\src\Redirect-Interstitial-Bypass.js
 
 //// Production version of this US
 //// Must be the last @require. Metadata block in it is ignored. No need to add if it's without JS code.
 //
-// @require        file://H:\Projects\JS\Redirect & Interstitial Bypass\GM\Redirect & Interstitial Bypass.user.js
+// @require        file://H:\Projects\JS\Redirect-Interstitial-Bypass\GM\Redirect-Interstitial-Bypass.user.js
 
 
 //// RESOURCE

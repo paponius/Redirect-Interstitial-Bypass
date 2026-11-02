@@ -31,7 +31,7 @@
 
 
 //// FRAMEWORKS & UTILITIES
-// DISABLED-require        https://github.com/paponius/Redirect-Interstitial-Bypass/raw/master/GM/GM_common.js
+// DISABLED-require        https://raw.githubusercontent.com/paponius/Redirect-Interstitial-Bypass/raw/master/GM/GM_common.js
 
 //// CORE APPLICATION LOGIC
 // @require        https://raw.githubusercontent.com/paponius/Redirect-Interstitial-Bypass/master/src/Redirect-Interstitial-Bypass.js?v0.9
