@@ -1,29 +1,29 @@
-// GreaseMonkey and compatible (GB) JS file for development of a UserScript (US)
-//
-// This file contains only metadata block, in this block local files are linked: `// @require  file://...PATH/FILE.user.js`.
-// Linked local files can be edited in external editor. No need to use build-in editor of the GM or copy/paste code into it each time.
-//
-// Copy here all @require directives which are in production version of the US (myscript.user.js).
-// Change path of those which are to be edited to local filepaths.
-// Add the production version of the US itself as the last @require. Metadate block within that file will be ignored by GM.
-//
-// This debug US only works in Chrome, as Firefox does not allow "file:" access from an Extension (as the GM).
-// GreaseMonkey (the original GM) extension does not allow "file:" protocol files. There are guides how it is possible, but not since 2017 when extension changed to WebExtension.
-// There is no need to change @version, nor to update version for "file://...FILE.js?v=1.1". It seems, TamperMonkey does not cache them.
-//
-//
-//// Install in the browser
-// Allow local access for GM extension in the browser.
-// Drag&drop this debug US to browser, GM will offer an install dialog. Or drag&drop dir where this US is located, then click on this file.
-// If drag&drop does not work, write the URL: "file:///PATH/", click on this file.
-//
-//
-//// Edit this debug US
-// If this is a template file, there are two keywords for quick start. Replace all Redirect & Interstitial Bypass with Script Name, and edit XXX_PATH.
-// This debug US file itself can be renamed.
-//
-// This is v2.0 of this debug US.
-
+/*** DEBUGGING & LOCAL DEVELOPMENT ARCHITECTURE:
+ * This is a local development Userscript wrapper.
+ *
+ * Workflow & Benefits:
+ * - Links directly to local source files using `file://` protocol `@require` directives.
+ * - Enables live editing in an external IDE without needing to copy/paste code into the browser editor.
+ * - Tampermonkey does not cache `file://` URIs, so version query parameters are unnecessary for local edits.
+ *
+ * Setup Instructions:
+ * 1. Allow local file access for your Userscript manager extension in your browser settings.
+ * 2. Copy the `@require` directives from your production script, converting target paths to absolute `file://` paths.
+ *    - Note on paths: Backslashes (e.g., `file:///C:\path`), although against the standards, work natively in Tampermonkey on Windows.
+ * 3. Add the production script file itself as the final `@require` (the manager ignores nested metadata blocks).
+ * 4. Install by dragging and dropping this debug `.user.js` file into the browser, or open its `file:///` URL directly.
+ *
+ * Note on Browser Constraints:
+ * Firefox and strict WebExtension security models block `file://` access from extensions.
+ * This setup targets Chrome/Chromium-based environments.
+ *
+ * TEMPLATE INSTRUCTIONS (Customize for new projects):
+ * - XXX_SCRIPTNAME: Replace with Script Name
+ * - XXX_PATH: Absolute local path to your project directory (e.g., file:///C:/Projects/MyScript)
+ * - This debug file can be renamed freely.
+ *
+ * v3.0
+ */
 
 // ==UserScript==
 // @name           DEBUG - Redirect & Interstitial Bypass
