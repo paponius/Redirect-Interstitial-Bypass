@@ -20,14 +20,16 @@
 // @namespace      https://github.com/paponius/
 // @description    Automatically bypasses intermediate redirect notice and warning pages with optional site filtering.
 // @author         papo
-// @version        0.5
+// @version        0.5.1
 // @license        CC BY-NC-SA 4.0
 // ###icon           https://www.google.com/s2/favicons?sz=64&domain=yyy.yy
 
 // @include        https://www.google.com/url?*
 
 // @run-at         document-start
-// @grant          none
+// @grant          GM_setValue
+// @grant          GM_getValue
+// #grant          none
 
 
 //// FRAMEWORKS & UTILITIES
